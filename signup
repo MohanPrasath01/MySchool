@@ -1,0 +1,9 @@
+='45px' /> </pc>
+      </pr>
+    </pc>
+  </pr><panel>
+  <pr height='fill' width='fill'>
+    <pc width='100%' bgColor='#F37D16' padding='20px' vAlign='middle'>
+      <pr height='auto' width='auto'>
+        <pc>
+          <button text='SIGN UP' size='3' bold='true' fontFamily='ProximaNova, arial, sans-serif' color='#FFFFFF' bgColor='#286BDC' type='rounded' marginLeft='0px' marginRight='0px' marginBottom='0px' marginTop='0px' action='OpenForm' target='same-window' componentLinkName='Add_Student' cornerRadius
