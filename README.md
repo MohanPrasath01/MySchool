@@ -11,3 +11,15 @@ The admin can send announcements via the calendar option that will be more graph
 In the approval tab there is two sections pending tasks and completed tasks.In the pending tasks the students can verify them and in the completed task the verified tasks are visible for further referneces.
 The grades for specific exams are posted and visible for the students for their approvals.
 Though it is a in-app notification enabled it is very usefull for the students.It is more efficient.
+# Database
+The students details are stored in the admin database.
+So the informations are easily fetched.
+# Language
+The language used is Deluge which is a Data Enriched Language.
+It is one of the fastest and most flexible scripting languages available.
+it is a one-stop solution for performing actions and integrations across the suite.
+It is cloud offering that provides infrastructure for serverless development and deployment of application functionalities.
+
+
+
+
