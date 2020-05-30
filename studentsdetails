@@ -1,0 +1,19 @@
+<panel>
+  <pr height='fill' width='fill'>
+    <pc width='100%' bgColor='#FFFFFF' padding='20px' hAlign='center' vAlign='middle' action='OpenForm' componentLinkName='Add_Student' target='popup'>
+      <pr height='auto' width='auto'>
+        <pc>
+          <pr>
+            <pc>
+              <image color='#449BE6' bgColor='#FFFFFF' width='52px' height='52px' type='icon' value='ui-2-square-add-11' size='4' cornerRadius='0px' iconType='solid' /> </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text type='Text' value='Add Student' size='2' color='#333333' marginTop='5px' textAlign='center'> </text>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
