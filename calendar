@@ -1,0 +1,19 @@
+<panel>
+  <pr height='fill' width='fill'>
+    <pc width='100%' bgColor='#BCEDDD' padding='20px' vAlign='middle'>
+      <pr height='auto' width='auto'>
+        <pc padding='5px'>
+          <pr height='auto' width='fill'>
+            <pc width='100%'>
+              <text type='Text' value='Academic Calendar' size='4'> </text>
+            </pc>
+          </pr>
+          <pr height='auto' width='fill'>
+            <pc width='100%'>
+              <button text='View' size='3' color='#FFFFFF' bgColor='#286BDC' type='rounded' marginLeft='0px' marginRight='0px' marginBottom='0px' marginTop='0px' action='OpenReport' target='same-window' componentLinkName='Academic_Calendar' cornerRadius='45px' /> </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
