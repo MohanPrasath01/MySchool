@@ -19,6 +19,144 @@ The language used is Deluge which is a Data Enriched Language.
 It is one of the fastest and most flexible scripting languages available.
 it is a one-stop solution for performing actions and integrations across the suite.
 It is cloud offering that provides infrastructure for serverless development and deployment of application functionalities.
+# Admin
+<%{
+	currentYear = Add_Current_Academic_Year[ID != 0].Academic_Year;
+	studentsCount = Add_Grade[Drop_Down == currentYear].Students.getAll().size();
+	employeeCount = Add_Employee[Employee_Status == "Active"].count();
+	subjectCount = Add_Subject[ID != 0].count();
+	holidaysCount = Add_to_Academic_Calender[Type == "Holiday" && Academic_Year == currentYear].sum(No_of_Days);
+	%>
+<style>
+.col-sm-6 {
+    width: 100%;
+}
+.view-header>.row h3 {
+    font-size: 19px;
+    color: #333945;
+    line-height: 40px;
+    font-weight: inherit;
+}
+.view-header>.row {
+    margin-left: -21px;
+	
+}
+.row {
+    padding-top: 4px;
+    margin-left: -15px;
+    margin-right: 0px;
+}
+.customBadge
+						  {
+						  width:100%;
+						  //height:100%;
+						  border:1px solid white;
+						  border-radius:3px;
+						  background:white;
+						  display:inline-block;
+						  height: 92px;
+						  }
+						  .iconDiv
+						  {
+						  width: 35%;
+						  //height:100%;
+						  border-radius: 3px 0px 0px 3px;
+						  //padding:20px 0px 20px 0px;
+						  padding:6% 0px;
+						  float:left;
+						  padding-left : 5%;
+						  }
+						  .iconDiv .zc-li-solid
+						  {
+						  font-size: 60px;
+						  //color: white;
+						  }
+						   .contentDiv
+						  {
+						  //height:100%;
+						  float:right;
+						  width:60%;
+						  text-align:center;
+						  //padding-top: 12px;
+						  //padding-bottom: 11px;
+						  padding-top: 5%;
+						  padding-bottom: 4%;
+						  color: #9e9e9e;
+						  }
+						  .numSpan
+						  {
+						  font-size: 33px;
+						  }
+						  .contentDiv font
+						  {
+							  font-size : 14px;
+						  }
+						  .row
+						  {
+							  padding-top: 4px;
+							  margin-left : 0px;
+							  margin-right : 0px;
+						  }
+/* 						  .zcp-col span i{
+							  color: #594DFB;
+						  } */
+</style>
+ <div class="row" >
+						  <div class="col-md-3" >
+						  <div class="customBadge" style="border-right:2px solid #6acbca;">
+						  <div class="iconDiv" style="color: #6acbca;">
+						  <i class="education-hat zc-li-solid" ></i>
+						  </div>
+						  <a href="#Report:Student_Details?Status=Active" target="_blank">
+						  <div class="contentDiv">
+						  <span class="numSpan"><%=studentsCount%></span><br>
+						  <font >Total Students</font>
+						  </div>
+						  </a>
+						  </div>
+						  </div>
+						  <div class="col-md-3" >
+						  <div class="customBadge" style="border-right:2px solid #fb6c5e;">
+						  <div class="iconDiv" style="color: #fb6c5e;">
+						  <i class="zc-li-solid users-multiple-19" ></i>
+						  </div>
+						  <a href="#Report:Employee_Details?Status=Active" target="_blank">
+						  <div class="contentDiv">
+						  <span class="numSpan"><%=employeeCount%></span><br>
+						  <font >Total Employees</font>
+						  </div>
+						  </a>
+						  </div>
+						  </div>
+						  <div class="col-md-3" >
+						  <div class="customBadge" style="border-right:2px solid #f8d347;">
+						  <div class="iconDiv" style="color: #f8d347;">
+						  <i class="zc-li-solid files-book-08" style="font-size: 55px;" ></i>
+						  </div>
+						  <a href="#Report:All_Subjects" target="_blank">
+						  <div class="contentDiv">
+						  <span class="numSpan"><%=subjectCount%></span><br>
+						  <font >Total Subjects</font>
+						  </div>
+						  </a>
+						  </div>
+						  </div>
+						  <div class="col-md-3" >
+						  <div class="customBadge">
+						  <div class="iconDiv" style="color: #55c8f1;">
+						  <i class="zc-li-solid ui-1-calendar-check-62" style="font-size: 53px;" ></i>
+						  </div>
+						  <a href="#Report:Holidays" target="_blank">
+						  <div class="contentDiv">
+						  <span class="numSpan"><%=holidaysCount%></span><br>
+						  <font>Total Holidays</font>
+						  </div>
+						  </a>
+						  </div>
+						  </div>
+						  </div>
+<%
+
 
 
 
