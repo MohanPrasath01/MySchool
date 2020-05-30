@@ -1,0 +1,32 @@
+<panel>
+  <pr height='fill' width='fill'>
+    <pc width='100%' bgColor='#FFFFFF' hAlign='center' vAlign='middle'>
+      <pr height='173px' width='fill'>
+        <pc width='100%' bgColor='#F3482C' paddingTop='17px' paddingLeft='0px' paddingRight='17px' paddingBottom='17px' hAlign='center'>
+          <pr height='auto' width='auto'>
+            <pc>
+              <image color='#FFFFFF' bgColor='#2D2D2D' width='250px' height='200px' type='gallery' value='The-school-visit-what-to-look-for-what-to-ask-1.jpg' cornerRadius='10px' /> </pc>
+          </pr>
+        </pc>
+      </pr>
+      <pr height='fill' width='fill'>
+        <pc width='100%' bgColor='#9357FB' padding='20px'>
+          <pr height='auto' width='auto'>
+            <pc bgColor='#BEA6FC' padding='3px'>
+              <pr>
+                <pc>
+                  <text type='Form Data' value='thisapp.Add_Student.Roll_No.sum' size='8' color='#FF4C2F' bold='true' displayType='actual' decimalSeperator='.' numberScale='none'> </text>
+                </pc>
+              </pr>
+              <pr>
+                <pc>
+                  <text type='Text' value='New SIGNUPS this month' size='3' color='#333333'> </text>
+                </pc>
+              </pr>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
